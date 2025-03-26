@@ -1,0 +1,43 @@
+body {
+    font-family: Verdana, sans-serif;
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+
+}
+
+header .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+nav ul {
+    display: flex;
+
+}
+
+nav li {
+    margin-left: 50px;
+    flex-wrap: wrap;
+
+}
+
+#hero {
+    display: flex;
+    height: 600px;
+
+    background-image: url(../images/hands-typing.jpg);
+    background-size: 100%;
+    background-position-y: center;
+
+    align-items: center;
+    justify-content: space-around;
+
+    text-shadow: #fff;
+    
+
+}
