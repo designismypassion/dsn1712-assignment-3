@@ -1,30 +1,48 @@
+/* Baseplate */
+
 body {
     font-family: Verdana, sans-serif;
 }
 
+/* Header */
+
 header {
     background-color: #000;
     color: #fff;
-
+    padding: 1em;
 }
 
 header .wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.wrapper span {
+    margin-left: 4em; /* fix this? */
+    font-size: 1.5em;
 
 }
 
-nav ul {
-    display: flex;
-
+.wrapper a:link,
+.wrapper a:visited {
+    text-decoration: none;
+    color: white;
 }
 
-nav li {
+.wrapper nav li {
     margin-left: 50px;
     flex-wrap: wrap;
-
+    list-style-type: none;
+    font-size: 0.8em;
 }
+
+.wrapper nav ul {
+    display: flex;
+    margin-right: 4em;
+}
+
+/* Hero */
 
 #hero {
     display: flex;
@@ -33,11 +51,28 @@ nav li {
     background-image: url(../images/hands-typing.jpg);
     background-size: 100%;
     background-position-y: center;
+    filter: grayscale(0.7);
 
     align-items: center;
     justify-content: space-around;
+}
 
-    text-shadow: #fff;
-    
+#hero h1 {
+    max-width: 60%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1em;
 
+    color: #fff;
+    text-shadow: 3px 3px 3px black;
+}
+
+#about-me .wrapper {
+    max-width: 940px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#services .wrapper {
 }
