@@ -4,22 +4,26 @@ body {
     font-family: Verdana, sans-serif;
 }
 
-/* Header */
-
-header {
-    background-color: #000;
-    color: #fff;
-    padding: 1em;
+.wrapper {
+    max-width: 940px;
+    margin: auto;
 }
+
+/* Header */
 
 header .wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    background-color: #000;
+    color: #fff;
+    
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 
 .wrapper span {
-    margin-left: 4em; /* fix this? */
     font-size: 1.5em;
 
 }
@@ -39,40 +43,60 @@ header .wrapper {
 
 .wrapper nav ul {
     display: flex;
-    margin-right: 4em;
 }
 
 /* Hero */
 
 #hero {
     display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
     height: 600px;
+    max-width: 940px;
+    margin: auto;
 
     background-image: url(../images/hands-typing.jpg);
     background-size: 100%;
     background-position-y: center;
     filter: grayscale(0.7);
-
-    align-items: center;
-    justify-content: space-around;
 }
 
 #hero h1 {
     max-width: 60%;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 1em;
+    text-align: center;
 
     color: #fff;
     text-shadow: 3px 3px 3px black;
 }
 
+/* About Me */
+
 #about-me .wrapper {
-    max-width: 940px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: wrap;
+    display : grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    padding-top: 25px;
 }
+
+#about-me h2 {
+    font-size: 2rem;
+}
+
+#about-me div {
+    grid-column: 1 / 3;
+    align-content: center;
+
+}
+
+#about-me img {
+    grid-column: 3 / 4;
+    max-width: 100%;
+}
+
+/* Services */
 
 #services .wrapper {
 }
