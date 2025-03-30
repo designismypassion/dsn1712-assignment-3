@@ -16,6 +16,9 @@ header .wrapper {
     justify-content: space-between;
     align-items: center;
 
+    padding-left: 50px;
+    padding-right: 50px;
+
     background-color: #000;
     color: #fff;
     
@@ -51,6 +54,9 @@ header .wrapper {
     display: flex;
     align-items: center;
     justify-content: space-around;
+
+    padding-left: 50px;
+    padding-right: 50px;
     
     height: 600px;
     max-width: 940px;
@@ -78,6 +84,8 @@ header .wrapper {
     display : grid;
     grid-template-columns: repeat(3, 1fr);
 
+    
+
     padding-top: 25px;
 }
 
@@ -99,4 +107,49 @@ header .wrapper {
 /* Services */
 
 #services .wrapper {
+    background-color: #fafafa;
+
+    padding: 2em;
+}
+
+#services .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+#services .grid article {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    background-color: #fff;
+    padding: 1em;
+}
+
+#services .grid h3 {
+    font-size: 2rem;
+}
+
+#services .grid a:link,
+#services .grid a:visited {
+  padding: .8em 1em;
+  background-color: #000000;
+  color: #fff;
+  text-decoration: none;
+  border: 2px solid #000000;
+  border-radius: 4px;
+
+  margin-top: auto;
+}
+
+#services .grid a:hover,
+#services .grid a:focus {
+  background-color: #fff;
+  color: #000000;
+}
+
+#services h2 {
+    text-align: center;
+    font-size: 2rem;
 }
