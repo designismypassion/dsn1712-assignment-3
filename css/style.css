@@ -27,7 +27,7 @@ header .wrapper {
 }
 
 .wrapper span {
-    font-size: 1.5em;
+    font-size: 1.5rem;
 
 }
 
@@ -41,7 +41,7 @@ header .wrapper {
     margin-left: 50px;
     flex-wrap: wrap;
     list-style-type: none;
-    font-size: 0.8em;
+    font-size: 0.8rem;
 }
 
 .wrapper nav ul {
